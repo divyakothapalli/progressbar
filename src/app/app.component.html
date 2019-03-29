@@ -1,0 +1,42 @@
+<mat-list>
+   <mat-divider></mat-divider>
+    <mat-divider></mat-divider>
+  <mat-list-item>
+    
+<mat-progress-bar mode="determinate" value="10" width="50%"  >tttt</mat-progress-bar>
+
+  </mat-list-item>
+  <mat-divider></mat-divider>
+ <mat-divider></mat-divider>
+    <mat-list-item>
+    
+<mat-progress-bar mode="determinate" value="25" width="50%"></mat-progress-bar>
+
+  </mat-list-item>
+
+   <mat-divider></mat-divider>
+    <mat-divider></mat-divider>
+
+    <mat-list-item>
+    
+<mat-progress-bar mode="determinate" value="80" width="50%"></mat-progress-bar>
+
+  </mat-list-item>
+
+ <mat-list-item>
+   
+   <mat-form-field>
+  <mat-label>Progress Bar</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let progress of prog" [value]="prog.value">
+      {{prog.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+ <button mat-button color="primary">{{buttons[0]}}</button>
+  <button mat-button color="primary">{{buttons[1]}}</button>
+   <button mat-button color="primary">{{buttons[2]}}</button>
+    <button mat-button color="primary">{{buttons[3]}}</button>
+ </mat-list-item>
+</mat-list>
+<router-outlet></router-outlet>
